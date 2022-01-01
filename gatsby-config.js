@@ -26,6 +26,18 @@ module.exports = {
       },
       __key: 'pages'
     },
-    'gatsby-plugin-typescript'
+    'gatsby-plugin-typescript',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Alianza Creciendo Juntos',
+        short_name: 'Alianza',
+        start_url: '/',
+        background_color: '#1D1D1B',
+        theme_color: '#009FE3',
+        display: 'standalone',
+        icon: 'src/images/icon.png'
+      }
+    }
   ]
 }
